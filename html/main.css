@@ -1,0 +1,220 @@
+/* HTML */
+
+* {
+  margin: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+.quit {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.158);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.158);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  display: block;
+  width: 70%;
+  max-width: 1100px;
+  height: 85%;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+  overflow-y: scroll;
+}
+
+header {
+  width: 100%;
+}
+
+header img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.content {
+  position: relative;
+  top: -60px;
+  padding: 0 64px;
+}
+
+.content-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+  max-width: 600px;
+  max-height: 300px;
+  position: absolute;
+  top: -380px;
+}
+
+.content-logo img {
+  width: 300px;
+}
+
+.portals {
+  position: relative;
+  top: 0px;
+}
+
+.content h1 {
+  font-size: 42px;
+  line-height: 65px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 27px;
+}
+
+.content h2 {
+  font-size: 33px;
+  line-height: 52px;
+  font-weight: 600;
+  /* text-align: center; */
+  margin-bottom: 27px;
+}
+
+.content h3 {
+  font-size: 26px;
+  line-height: 41px;
+  font-weight: 600;
+  /* text-align: center; */
+  margin-bottom: 27px;
+}
+
+.content h4 {
+  font-size: 20px;
+  line-height: 33px;
+  font-weight: 600;
+  /* text-align: center; */
+  margin-bottom: 27px;
+}
+
+.content p {
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 500;
+  margin-bottom: 27px;
+}
+
+.content p b {
+  font-weight: 600;
+}
+
+.content p i {
+  font-style: italic;
+}
+
+.content ul {}
+
+.content ul li {
+  list-style-type: square;
+}
+
+.content ol li {
+  font-weight: 600;
+}
+
+.confirmation {
+  padding: 0 64px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.confirmation h1 {
+  font-size: 16px;
+}
+
+.confirmation h2 {
+  font-size: 16px;
+}
+
+.confirmation h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.confirmation h4 {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.confirmation-company {}
+
+.confirmation-company img {
+  margin: 30px 0 5px;
+  width: 275px;
+}
+
+.confirmation-player {
+  display: block;
+}
+
+.confirmation-player-actions {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.confirmation-player-actions button {
+  display: inline-block;
+  margin: 4px 0;
+  padding: 12px 70px 12px 70px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+  transition: opacity 0.125s linear;
+}
+
+.confirmation-player-actions button:hover {
+  opacity: 1;
+}
+
+.confirmation-player-actions button i {
+  font-size: 24px;
+  margin-right: 18px;
+}
+
+.confirmation-player-actions-accept {
+  background: #2ecc71;
+}
+
+.confirmation-player-actions-decline {
+  background: #f06060;
+}
